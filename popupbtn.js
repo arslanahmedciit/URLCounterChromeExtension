@@ -2,7 +2,6 @@ var storage = chrome.storage.local;
 var v1 = 'k1';
 
 storage.get(v1, function(result) {
-    console.log(v1, result[v1]);
 	document.getElementById("p1").innerHTML = result[v1];
 });
 
